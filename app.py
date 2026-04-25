@@ -22,13 +22,28 @@ for intent in data["intents"]:
         patterns.append(pattern)
         tags.append(intent["tag"])
 
-vectorizer = TfidfVectorizer()
-X = vectorizer.fit_transform(patterns)
+# ❗ Lazy loading (IMPORTANT FIX)
+vectorizer = None
+model = None
 
-model = LogisticRegression()
-model.fit(X, tags)
+def train_model():
+    global vectorizer, model
+
+    if model is None:
+        print("Training model...")
+
+        vectorizer = TfidfVectorizer()
+        X = vectorizer.fit_transform(patterns)
+
+        model = LogisticRegression()
+        model.fit(X, tags)
+
+        print("Model trained successfully")
+
 
 def chatbot_response(user_input):
+    train_model()  # ✅ load only when needed
+
     user_vector = vectorizer.transform([user_input])
     prediction = model.predict(user_vector)[0]
     probability = max(model.predict_proba(user_vector)[0])
@@ -41,17 +56,17 @@ def chatbot_response(user_input):
             return random.choice(intent["responses"])
 
 
-# ✅ Home page (UI for browser testing)
+# ✅ Home page (browser UI)
 @app.route("/")
 def home():
     return render_template_string("""
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Chatbot Test</title>
+        <title>Chatbot</title>
     </head>
     <body>
-        <h2>Chatbot Test UI</h2>
+        <h2>Chatbot Test</h2>
         <input type="text" id="msg" placeholder="Type message">
         <button onclick="sendMsg()">Send</button>
         <p id="response"></p>
@@ -78,29 +93,26 @@ def home():
     """)
 
 
-# ✅ Chat route (GET + POST both)
+# ✅ Chat route (GET + POST)
 @app.route("/chat", methods=["GET", "POST"])
 def chat():
-    # For browser testing
+
+    # GET (browser testing)
     if request.method == "GET":
         user_input = request.args.get("message", "")
-        
-        if not user_input:
-            return jsonify({"response": "Send message like ?message=hello"})
-        
-        response = chatbot_response(user_input)
-        return jsonify({"response": response})
 
-    # For API (POST)
+        if not user_input:
+            return jsonify({"response": "Use ?message=hello"})
+
+        return jsonify({"response": chatbot_response(user_input)})
+
+    # POST (API)
     data = request.get_json(silent=True)
 
     if not data or "message" not in data:
         return jsonify({"response": "Please send a message."})
 
-    user_input = data["message"]
-    response = chatbot_response(user_input)
-
-    return jsonify({"response": response})
+    return jsonify({"response": chatbot_response(data["message"])})
 
 
 if __name__ == "__main__":
