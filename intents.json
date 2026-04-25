@@ -1,0 +1,1562 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": ["Hi","Hello","Hey","Good morning","Good afternoon","Good evening","hye","hii","hi","hello","hlo","hlw"],
+      "responses": ["Hello! Welcome to ODM College Enquiry Chatbot.How can i help you?"]
+    },
+
+    {
+      "tag": "about_odm",
+      "patterns": ["tell me about college","tell me about ODM college","about college"
+	  ],
+      "responses": ["ODM College stands for Ompati Devi Memorial College located in Hisar, Haryana."]
+    },
+ {
+      "tag": "college_location",
+      "patterns": ["where ODM is located","tell me about location of the ODM college","show location",
+ "in which city ODM college located","Is ODM College in Hisar?","Is ODM College in Haryana?","What is the address of ODM College?",
+ "Which district is ODM College in?","In which state is ODM College situated?","Tell me the college address",
+ "What is the full address of ODM College?","How can I reach ODM College?", "location", "college location",
+ "tell me location of odm college"],
+	 
+      "responses": ["ODM College for Women is located 12KM Stone, NH-52, Rajgarh Road, Muklan-Hisar district, Haryana, India."]
+    },
+   
+	{
+      "tag": "establishment",
+  "patterns": [
+    "When was ODM College established?",
+    "In which year was ODM College founded?",
+    "What is the establishment year of ODM College?",
+    "Since when is ODM College running?",
+    "How old is ODM College?"
+  ],
+  "responses": [
+    "ODM College was established in 2019 to promote quality higher education for women in Hisar."
+  ]
+    },
+{
+  "tag": "vice_principal_info",
+  "patterns": [
+    "who is the vice principal of odm college",
+    "name of vice principal",
+    "who is vice principal mam",
+    "who is the vice principal of odm college for women",
+    "vice principal name",
+    "vice principal of odm college muklan",
+    "who is mrs shashi bala",
+    "who is mrs shashi bala in odm college",
+    "tell me about vice principal",
+    "vice principal information",
+    "who is the current vice principal",
+    "vice principal mam name",
+    "is mrs shashi bala vice principal",
+    "what is the name of vice principal mam",
+    "about vice principal of odm college",
+    "details of vice principal",
+    "vice principal contact details",
+    "who is shashi bala mam",
+    "vice principal ka naam kya hai",
+    "odm college vice principal"
+  ],
+  "responses": [
+    "The Vice Principal of ODM College for Women, Muklan (Hisar) is Mrs. Shashi Bala.\n\nFor more official details, please contact the college office or visit the official website www.odmcollege.com."
+  ]
+},
+    {
+  "tag": "principal_details",
+  "patterns": [
+    "Who is the principal of ODM College?",
+    "What is the name of the principal of ODM College?",
+    "Current principal of ODM College?",    
+    "Who is the college principal?",
+    "Tell me the name of the principal.",
+    "Principal name?",
+    "Is there a female principal?",    
+    "Who is the administrative head of ODM College?",
+    "Can you tell me about the principal?",
+    "Who is in charge of ODM College?",
+    "Who is the chief authority of the college?",
+    "Who is the academic head of ODM College?",
+    "Contact details of the principal?",
+    "How can I contact the principal of ODM College?",
+    "Principal office contact number?",
+    "Email of the principal?",
+    "Since when is the principal working?",
+    "Information about ODM College principal"
+  ],
+  "responses": [
+    "Dr. Pratima Kumar (Ph.D. in Chemistry) is the Principal of ODM College for Women, Muklan (Hisar)."
+  ]
+},
+
+ {
+  "tag": "director_details",
+  "patterns": [
+    "Who is the director of ODM College?",
+    "What is the name of the director?",
+    "Current director of ODM College?",
+    "Director name?",
+	"Director's qualification",
+    "Who is managing ODM College as director?",
+    "What is the qualification of the director?",
+    "Is the director PhD holder?",
+    "What is Dr. Ajit Singh qualification?",
+    "Director qualification?",
+    "In which subject has the director done PhD?",
+    "What is the educational background of the director?",
+    "How can I contact the director?",
+    "Director contact details?"
+  ],
+  "responses": [
+    "Dr. Ajit Singh (Ph.D. in Computer Science) is the Director of ODM College for Women, Muklan (Hisar)."
+  ]
+},
+{
+  "tag": "founder_management",
+  "patterns": [
+    "Who founded ODM College?",
+    "Who is the founder of ODM College?",
+    "Under which trust is ODM College managed?",
+    "Who manages ODM College?",
+    "Is ODM College private or government?"
+  ],
+  "responses": [
+    "ODM College is managed under DHE Govt. of Haryana guidelines and operates as a private women college."
+  ]
+},
+{
+  "tag": "mission_vision",
+  "patterns": [
+    "Why is the aim of ODM College?",
+    "What was the aim of establishing ODM College?",
+    "What is the mission of ODM College?",
+    "What is the vision of ODM College?"
+  ],
+  "responses": [
+    "The aim of establishing ODM College is to provide quality education, empower women, and promote academic excellence in Hisar region."
+  ]
+},
+{
+  "tag": "affiliation_recognition",
+  "patterns": [
+    "Is ODM College affiliated with any university?",
+    "Which university is ODM College affiliated to?",
+    "Is ODM College approved by DHE Haryana?",
+    "Is ODM College recognized by UGC?"
+  ],
+  "responses": [
+    "ODM College is affiliated as per DHE Govt. of Haryana guidelines and follows Guru Jambeshwar University of Science & Technolog regulations for higher education."
+  ]
+},
+    {
+  "tag": "ug_ba_fees",
+  "patterns": [
+    "What is the fees for B.A?",
+	"What is the feess for B.A?",
+    "fees of BA?",
+    "BA fees?",
+    "How much is the B.A fees?",
+    "What is the annual fees for B.A?",
+    "Total fees of B.A?",
+    "Per year fees for B.A?",
+    "BA course fees structure?",
+    "What are the charges for B.A?",
+    "How much does B.A cost?",
+    "Is B.A expensive?",
+    "Semester fees of B.A?",
+    "Installment facility for B.A fees?",
+    "What is the tuition fees for B.A?",
+    "BA first year fees?",
+    "BA admission fees?",
+    "Tell me BA fees details",
+    "What is BA program fees in ODM College?",
+	"What is the fees for B.A?",
+    "What is the BA fees in ODM College?",
+    "What is the BA fees in ODM College Muklan?",
+    "BA fees structure?",
+    "Tell me the fees of B.A in ODM College.",
+    "How much is the annual fees for BA?",
+    "What is the total fees for BA course?",
+    "BA course fees details?",
+    "What is the first year fees for BA?",
+    "BA fees per year in ODM College?",
+    "fees structure of BA in ODM College for Women Muklan?",
+    "How much does BA cost in ODM College Hisar?",
+    "Is BA fees affordable in ODM College?",
+    "What are the charges for BA admission?",
+    "BA admission fees?"
+  ],
+  "responses": [
+    "B.A is a 3-year undergraduate course. The total annual fees at ODM College for Women, Muklan (Hisar) is 18,000Rs. feess can be paid in installments as per college rules."
+  ]
+},
+
+    {
+  "tag": "ug_bcom_fees",
+  "patterns": [
+    "What is the fees for B.Com?",
+    "fees of B.Com?",
+    "B.Com fees?",
+    "How much is the B.Com fees?",
+    "What is the annual fees for B.Com?",
+    "Total fees of B.Com?",
+    "Per year fees for B.Com?",
+    "B.Com course fees structure?",
+    "What are the charges for B.Com?",
+    "How much does B.Com cost?",
+    "Is B.Com expensive?",
+    "Semester fees of B.Com?",
+    "Installment facility for B.Com fees?",
+    "What is the tuition fees for B.Com?",
+    "B.Com first year fees?",
+    "B.Com admission fees?",
+    "Tell me B.Com fees details",
+    "What is B.Com program fees in ODM College?",
+    "What is the B.Com fees in ODM College?",
+    "What is the B.Com fees in ODM College Muklan?",
+    "B.Com fees structure?",
+    "Tell me the fees of B.Com in ODM College.",
+    "How much is the annual fees for B.Com?",
+    "What is the total fees for B.Com course?",
+    "B.Com course fees details?",
+    "What is the first year fees for B.Com?",
+    "B.Com fees per year in ODM College?",
+    "fees structure of B.Com in ODM College for Women Muklan?",
+    "How much does B.Com cost in ODM College Hisar?",
+    "Is B.Com fees affordable in ODM College?",
+    "What are the charges for B.Com admission?"
+  ],
+  "responses": [
+"B.Com is a 3-year undergraduate course. The total annual fees at ODM College for Women, Muklan (Hisar) is ₹22,000."  ]
+},
+
+    {
+  "tag": "bsc_ps_fees",
+  "patterns": [
+    "What is the fees for B.Sc Physical Science?",
+    "fees of B.Sc Physical Science?",
+    "B.Sc Physical Science fees?",
+    "How much is the B.Sc Physical Science fees?",
+    "What is the annual fees for B.Sc Physical Science?",
+    "Total fees of B.Sc Physical Science?",
+    "Per year fees for B.Sc Physical Science?",
+    "B.Sc Physical Science course fees structure?",
+    "What are the charges for B.Sc Physical Science?",
+    "How much does B.Sc Physical Science cost?",
+    "Is B.Sc Physical Science expensive?",
+    "Semester fees of B.Sc Physical Science?",
+    "Installment facility for B.Sc Physical Science fees?",
+    "What is the tuition fees for B.Sc Physical Science?",
+    "B.Sc Physical Science first year fees?",
+    "B.Sc Physical Science admission fees?",
+    "Tell me B.Sc Physical Science fees details",
+    "What is B.Sc Physical Science program fees in ODM College?",
+    "What is the B.Sc Physical Science fees in ODM College?",
+    "What is the B.Sc Physical Science fees in ODM College Muklan?",
+    "B.Sc Physical Science fees structure?",
+    "Tell me the fees of B.Sc Physical Science in ODM College.",
+    "How much is the annual fees for B.Sc Physical Science?",
+    "What is the total fees for B.Sc Physical Science course?",
+    "B.Sc Physical Science course fees details?",
+    "What is the first year fees for B.Sc Physical Science?",
+    "B.Sc Physical Science fees per year in ODM College?",
+    "fees structure of B.Sc Physical Science in ODM College for Women Muklan?",
+    "How much does B.Sc Physical Science cost in ODM College Hisar?",
+    "Is B.Sc Physical Science fees affordable in ODM College?",
+    "What are the charges for B.Sc Physical Science admission?",
+	"What is the fees for B.Sc Non Medical?",
+    "fees of B.Sc Non Medical?",
+    "B.Sc Non Medical fees?",
+    "How much is the B.Sc Non Medical fees?",
+    "What is the annual fees for B.Sc Non Medical?",
+    "Total fees of B.Sc Non Medical?",
+    "Per year fees for B.Sc Non Medical?",
+    "B.Sc Non Medical course fees structure?",
+    "What are the charges for B.Sc Non Medical?",
+    "How much does B.Sc Non Medical cost?",
+    "Is B.Sc Non Medical expensive?",
+    "Semester fees of B.Sc Non Medical?",
+    "Installment facility for B.Sc Non Medical fees?",
+    "What is the tuition fees for B.Sc Non Medical?",
+    "B.Sc Non Medical first year fees?",
+    "B.Sc Non Medical admission fees?",
+    "Tell me B.Sc Non Medical fees details",
+    "What is B.Sc Non Medical program fees in ODM College?",
+    "What is the B.Sc Non Medical fees in ODM College?",
+    "What is the B.Sc Non Medical fees in ODM College Muklan?",
+    "B.Sc Non Medical fees structure?",
+    "Tell me the fees of B.Sc Non Medical in ODM College.",
+    "How much is the annual fees for B.Sc Non Medical?",
+    "What is the total fees for B.Sc Non Medical course?",
+    "B.Sc Non Medical course fees details?",
+    "What is the first year fees for B.Sc Non Medical?",
+    "B.Sc Non Medical fees per year in ODM College?",
+    "fees structure of B.Sc Non Medical in ODM College for Women Muklan?",
+    "How much does B.Sc Non Medical cost in ODM College Hisar?",
+    "Is B.Sc Non Medical fees affordable in ODM College?",
+    "What are the charges for B.Sc Non Medical admission?",
+	 "What is the fees for B.Sc Physical Science Non Medical?",
+    "B.Sc Non Medical fees with duration?",
+    "Duration and fees of B.Sc Non Medical?",
+    "How many years is B.Sc Non Medical and what is the fees?",
+    "Total duration of B.Sc Non Medical course?",
+    "Annual fees and duration of B.Sc Non Medical?"
+  ],
+  "responses": [
+     "B.Sc Physical Science (Non-Medical) is a 3-year undergraduate course. The total annual fees at ODM College for Women, Muklan (Hisar) is ₹25,000."
+  ]
+},
+{
+  "tag": "ug_bsc_cs_fees",
+  "patterns": [
+    "What is the fees for B.Sc Computer Science?",
+	"bsc computer science  fee structure",
+	"bsc computer science  fees structure",
+    "fees of B.Sc Computer Science?",
+    "B.Sc Computer Science fees?",
+    "How much is the B.Sc Computer Science fees?",
+    "What is the annual fees for B.Sc Computer Science?",
+    "Total fees of B.Sc Computer Science?",
+    "Per year fees for B.Sc Computer Science?",
+    "B.Sc Computer Science course fees structure?",
+    "What are the charges for B.Sc Computer Science?",
+    "How much does B.Sc Computer Science cost?",
+    "Is B.Sc Computer Science expensive?",
+    "Semester fees of B.Sc Computer Science?",
+    "Installment facility for B.Sc Computer Science fees?",
+    "What is the tuition fees for B.Sc Computer Science?",
+    "B.Sc Computer Science first year fees?",
+    "B.Sc Computer Science admission fees?",
+    "Tell me B.Sc Computer Science fees details",
+    "What is B.Sc Computer Science program fees in ODM College?",
+    "What is the B.Sc Computer Science fees in ODM College?",
+    "What is the B.Sc Computer Science fees in ODM College Muklan?",
+    "B.Sc Computer Science fees structure?",
+    "Tell me the fees of B.Sc Computer Science in ODM College.",
+    "How much is the annual fees for B.Sc Computer Science?",
+    "What is the total fees for B.Sc Computer Science course?",
+    "B.Sc Computer Science course fees details?",
+    "What is the first year fees for B.Sc Computer Science?",
+    "B.Sc Computer Science fees per year in ODM College?",
+    "fees structure of B.Sc Computer Science in ODM College for Women Muklan?",
+    "How much does B.Sc Computer Science cost in ODM College Hisar?",
+    "Is B.Sc Computer Science fees affordable in ODM College?",
+    "What are the charges for B.Sc Computer Science admission?"
+  ],
+  "responses": [
+   "B.Sc Computer Science(Non-Medical) is a 3-year undergraduate course. The total annual fees at ODM College for Women, Muklan (Hisar) is ₹25,000."
+  ]
+},
+{
+  "tag": "ug_bsc_medical_fees",
+  "patterns": [
+    "What is the fees for B.Sc Medical?",
+    "fees of B.Sc Medical?",
+    "B.Sc Medical fees?",
+    "How much is the B.Sc Medical fees?",
+    "What is the annual fees for B.Sc Medical?",
+    "Total fees of B.Sc Medical?",
+    "Per year fees for B.Sc Medical?",
+    "B.Sc Medical course fees structure?",
+    "What are the charges for B.Sc Medical?",
+    "How much does B.Sc Medical cost?",
+    "Is B.Sc Medical expensive?",
+    "Semester fees of B.Sc Medical?",
+    "Installment facility for B.Sc Medical fees?",
+    "What is the tuition fees for B.Sc Medical?",
+    "B.Sc Medical first year fees?",
+    "B.Sc Medical admission fees?",
+    "Tell me B.Sc Medical fees details",
+    "What is B.Sc Medical program fees in ODM College?",
+    "What is the B.Sc Medical fees in ODM College?",
+    "What is the B.Sc Medical fees in ODM College Muklan?",
+    "B.Sc Medical fees structure?",
+    "Tell me the fees of B.Sc Medical in ODM College.",
+    "How much is the annual fees for B.Sc Medical?",
+    "What is the total fees for B.Sc Medical course?",
+    "B.Sc Medical course fees details?",
+    "What is the first year fees for B.Sc Medical?",
+    "B.Sc Medical fees per year in ODM College?",
+    "fees structure of B.Sc Medical in ODM College for Women Muklan?",
+    "How much does B.Sc Medical cost in ODM College Hisar?",
+    "Is B.Sc Medical fees affordable in ODM College?",
+    "What are the charges for B.Sc Medical admission?"
+  ],
+  "responses": [
+    "B.Sc Medical is a 3-year undergraduate course. The total annual fees at ODM College for Women, Muklan (Hisar) is ₹25,000."
+  ]
+},
+{
+  "tag": "pg_mcom_fees",
+  "patterns": [
+    "What is the fees for M.Com?",
+    "fees of M.Com?",
+    "M.Com fees?",
+    "How much is the M.Com fees?",
+    "What is the annual fees for M.Com?",
+    "Total fees of M.Com?",
+    "Per year fees for M.Com?",
+    "M.Com course fees structure?",
+    "What are the charges for M.Com?",
+    "How much does M.Com cost?",
+    "Is M.Com expensive?",
+    "Semester fees of M.Com?",
+    "Installment facility for M.Com fees?",
+    "What is the tuition fees for M.Com?",
+    "M.Com first year fees?",
+    "M.Com admission fees?",
+    "Tell me M.Com fees details",
+    "What is M.Com program fees in ODM College?",
+    "What is the M.Com fees in ODM College Muklan?",
+    "M.Com fees structure in ODM College?",
+    "How much is the annual fees for M.Com in ODM College?",
+    "What is the total fees for M.Com course?",
+    "M.Com course fees details in ODM College for Women?",
+    "What is the first year fees for M.Com?",
+    "M.Com fees per year in ODM College?",
+    "fees structure of M.Com in ODM College for Women Muklan?",
+    "How much does M.Com cost in ODM College Hisar?",
+    "Is M.Com fees affordable in ODM College?",
+    "What are the charges for M.Com admission?",
+    "Does ODM College provide installment facility for M.Com fees?",
+    "What is the complete fees of M.Com course?"
+  ],
+  "responses": [
+    "The total annual fees for M.Com at ODM College for Women, Muklan (Hisar) is ₹30,000 per year."
+  ]
+},
+{
+  "tag": "pg_mcom_details",
+  "patterns": [
+    "What is the duration of M.Com in ODM College?",
+    "How long is M.Com course?",
+    "M.Com course duration?",
+    "How many years is M.Com?",
+    "How many semesters are there in M.Com?",
+    "Tell me M.Com course details",
+    "M.Com course information in ODM College?",
+    "What is the duration and fees of M.Com?",
+    "Details of M.Com in ODM College Muklan?",
+    "M.Com course structure?",
+    "Is M.Com a postgraduate course?",
+    "What is the semester system of M.Com?",
+    "How many semesters in M.Com at ODM College?"
+  ],
+  "responses": [
+    "M.Com at ODM College for Women, Muklan (Hisar) is a Postgraduate Degree course of 2 Years duration divided into 4 Semesters. The total annual fees is ₹30,000."
+  ]
+},
+{
+  "tag": "pg_msc_mathematics_fees",
+  "patterns": [
+    "What is the fees for M.Sc Mathematics?",
+    "fees of M.Sc Mathematics?",
+    "M.Sc Mathematics fees?",
+    "How much is the M.Sc Mathematics fees?",
+    "What is the annual fees for M.Sc Mathematics?",
+    "Total fees of M.Sc Mathematics?",
+    "Per year fees for M.Sc Mathematics?",
+    "M.Sc Mathematics course fees structure?",
+    "What are the charges for M.Sc Mathematics?",
+    "How much does M.Sc Mathematics cost?",
+    "Is M.Sc Mathematics expensive?",
+    "Semester fees of M.Sc Mathematics?",
+    "Installment facility for M.Sc Mathematics fees?",
+    "What is the tuition fees for M.Sc Mathematics?",
+    "M.Sc Mathematics first year fees?",
+    "M.Sc Mathematics admission fees?",
+    "Tell me M.Sc Mathematics fees details",
+    "What is M.Sc Mathematics program fees in ODM College?",
+    "What is the M.Sc Mathematics fees in ODM College Muklan?",
+    "M.Sc Mathematics fees structure in ODM College?",
+    "How much is the annual fees for M.Sc Mathematics in ODM College?",
+    "What is the total fees for M.Sc Mathematics course?",
+    "M.Sc Mathematics course fees details in ODM College for Women?",
+    "What is the first year fees for M.Sc Mathematics?",
+    "M.Sc Mathematics fees per year in ODM College?",
+    "fees structure of M.Sc Mathematics in ODM College for Women Muklan?",
+    "How much does M.Sc Mathematics cost in ODM College Hisar?",
+    "Is M.Sc Mathematics fees affordable in ODM College?",
+    "What are the charges for M.Sc Mathematics admission?",
+    "Does ODM College provide installment facility for M.Sc Mathematics fees?",
+    "What is the complete fees of M.Sc Mathematics course?",
+    "What is the duration of M.Sc Mathematics?",
+    "How many years is M.Sc Mathematics?",
+    "How many semesters are there in M.Sc Mathematics?",
+    "M.Sc Mathematics course duration?",
+    "Duration and fees of M.Sc Mathematics?"
+  ],
+  "responses": [
+    "M.Sc Mathematics at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. The total annual fees is ₹40,000 per year."
+  ]
+},
+{
+  "tag": "pg_msc_physics_details",
+  "patterns": [
+    "What is the fees for M.Sc Physics?",
+    "fees of M.Sc Physics?",
+    "M.Sc Physics fees?",
+    "How much is the M.Sc Physics fees?",
+    "What is the annual fees for M.Sc Physics?",
+    "Total fees of M.Sc Physics?",
+    "Per year fees for M.Sc Physics?",
+    "M.Sc Physics course fees structure?",
+    "What are the charges for M.Sc Physics?",
+    "How much does M.Sc Physics cost?",
+    "Is M.Sc Physics expensive?",
+    "Semester fees of M.Sc Physics?",
+    "Installment facility for M.Sc Physics fees?",
+    "What is the tuition fees for M.Sc Physics?",
+    "M.Sc Physics first year fees?",
+    "M.Sc Physics admission fees?",
+    "Tell me M.Sc Physics fees details",
+    "What is M.Sc Physics program fees in ODM College?",
+    "What is the M.Sc Physics fees in ODM College?",
+    "What is the M.Sc Physics fees in ODM College Muklan?",
+    "M.Sc Physics fees structure in ODM College?",
+    "How much is the annual fees for M.Sc Physics in ODM College?",
+    "What is the total fees for M.Sc Physics course?",
+    "M.Sc Physics course fees details in ODM College for Women?",
+    "What is the first year fees for M.Sc Physics?",
+    "M.Sc Physics fees per year in ODM College?",
+    "fees structure of M.Sc Physics in ODM College for Women Muklan?",
+    "How much does M.Sc Physics cost in ODM College Hisar?",
+    "Is M.Sc Physics fees affordable in ODM College?",
+    "What are the charges for M.Sc Physics admission?",
+    "Does ODM College provide installment facility for M.Sc Physics fees?",
+    "What is the complete fees of M.Sc Physics course?",
+    "What is the duration of M.Sc Physics?",
+    "How long is M.Sc Physics course?",
+    "How many years is M.Sc Physics?",
+    "How many semesters are there in M.Sc Physics?",
+    "M.Sc Physics course duration?",
+    "Tell me M.Sc Physics course details",
+    "Is M.Sc Physics a postgraduate course?",
+    "M.Sc Physics duration and fees?"
+  ],
+  "responses": [
+    "M.Sc Physics at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. The total annual fees is ₹45,000 per year."
+  ]
+},
+{
+  "tag": "pg_msc_chemistry_fees_duration",
+  "patterns": [
+    "What is the fees for M.Sc Chemistry?",
+    "fees of M.Sc Chemistry?",
+    "M.Sc Chemistry fees?",
+    "How much is the M.Sc Chemistry fees?",
+    "What is the annual fees for M.Sc Chemistry?",
+    "Total fees of M.Sc Chemistry?",
+    "Per year fees for M.Sc Chemistry?",
+    "M.Sc Chemistry course fees structure?",
+    "What are the charges for M.Sc Chemistry?",
+    "How much does M.Sc Chemistry cost?",
+    "Is M.Sc Chemistry expensive?",
+    "Semester fees of M.Sc Chemistry?",
+    "Installment facility for M.Sc Chemistry fees?",
+    "What is the tuition fees for M.Sc Chemistry?",
+    "M.Sc Chemistry first year fees?",
+    "M.Sc Chemistry admission fees?",
+    "Tell me M.Sc Chemistry fees details",
+    "What is M.Sc Chemistry program fees in ODM College?",
+    "What is the M.Sc Chemistry fees in ODM College Muklan?",
+    "M.Sc Chemistry fees structure in ODM College?",
+    "How much is the annual fees for M.Sc Chemistry in ODM College?",
+    "What is the total fees for M.Sc Chemistry course?",
+    "M.Sc Chemistry course fees details in ODM College for Women?",
+    "What is the first year fees for M.Sc Chemistry?",
+    "M.Sc Chemistry fees per year in ODM College?",
+    "fees structure of M.Sc Chemistry in ODM College for Women Muklan?",
+    "How much does M.Sc Chemistry cost in ODM College Hisar?",
+    "Is M.Sc Chemistry fees affordable in ODM College?",
+    "What are the charges for M.Sc Chemistry admission?",
+    "Does ODM College provide installment facility for M.Sc Chemistry fees?",
+    "What is the complete fees of M.Sc Chemistry course?",
+    "What is the duration of M.Sc Chemistry?",
+    "How many years is M.Sc Chemistry?",
+    "How many semesters are there in M.Sc Chemistry?",
+    "M.Sc Chemistry course duration?",
+    "Duration and fees of M.Sc Chemistry in ODM College?",
+    "Is M.Sc Chemistry a postgraduate course?",
+    "Course details of M.Sc Chemistry?"
+  ],
+  "responses": [
+    "M.Sc Chemistry at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. The total annual fees is ₹45,000 per year."
+  ]
+},
+{
+  "tag": "pg_msc_cs_details",
+  "patterns": [
+    "What is the fees for M.Sc Computer Science?",
+    "fees of M.Sc Computer Science?",
+    "M.Sc Computer Science fees?",
+    "How much is the M.Sc Computer Science fees?",
+    "What is the annual fees for M.Sc Computer Science?",
+    "Total fees of M.Sc Computer Science?",
+    "Per year fees for M.Sc Computer Science?",
+    "M.Sc Computer Science course fees structure?",
+    "What are the charges for M.Sc Computer Science?",
+    "How much does M.Sc Computer Science cost?",
+    "Is M.Sc Computer Science expensive?",
+    "Semester fees of M.Sc Computer Science?",
+    "Installment facility for M.Sc Computer Science fees?",
+    "What is the tuition fees for M.Sc Computer Science?",
+    "M.Sc Computer Science first year fees?",
+    "M.Sc Computer Science admission fees?",
+    "Tell me M.Sc Computer Science fees details",
+    "What is M.Sc Computer Science program fees in ODM College?",
+    "What is the M.Sc Computer Science fees in ODM College?",
+    "What is the M.Sc Computer Science fees in ODM College Muklan?",
+    "M.Sc Computer Science fees structure in ODM College?",
+    "How much is the annual fees for M.Sc Computer Science in ODM College?",
+    "What is the total fees for M.Sc Computer Science course?",
+    "M.Sc Computer Science course fees details in ODM College for Women?",
+    "What is the first year fees for M.Sc Computer Science?",
+    "M.Sc Computer Science fees per year in ODM College?",
+    "fees structure of M.Sc Computer Science in ODM College for Women Muklan?",
+    "How much does M.Sc Computer Science cost in ODM College Hisar?",
+    "Is M.Sc Computer Science fees affordable in ODM College?",
+    "What are the charges for M.Sc Computer Science admission?",
+    "What is the duration of M.Sc Computer Science?",
+    "How long is M.Sc Computer Science course?",
+    "M.Sc Computer Science course duration?",
+    "How many years is M.Sc Computer Science?",
+    "How many semesters are there in M.Sc Computer Science?",
+    "Is M.Sc Computer Science a postgraduate course?",
+    "Tell me M.Sc Computer Science course details",
+    "What is the duration and fees of M.Sc Computer Science?",
+    "M.Sc Computer Science course structure in ODM College?",
+    "Details of M.Sc Computer Science in ODM College Muklan?"
+  ],
+  "responses": [
+    "M.Sc Computer Science at ODM College for Women, Muklan (Hisar) is a 2-year Postgraduate Degree course divided into 4 semesters. The total annual fees is ₹40,000 per year."
+  ]
+},
+{
+  "tag": "pg_ma_political_science_details",
+  "patterns": [
+    "What is the fees for M.A Political Science?",
+    "fees of M.A Political Science?",
+    "M.A Political Science fees?",
+    "How much is the M.A Political Science fees?",
+    "What is the annual fees for M.A Political Science?",
+    "Total fees of M.A Political Science?",
+    "Per year fees for M.A Political Science?",
+    "M.A Political Science course fees structure?",
+    "What are the charges for M.A Political Science?",
+    "How much does M.A Political Science cost?",
+    "Is M.A Political Science expensive?",
+    "Semester fees of M.A Political Science?",
+    "Installment facility for M.A Political Science fees?",
+    "What is the tuition fees for M.A Political Science?",
+    "M.A Political Science first year fees?",
+    "M.A Political Science admission fees?",
+    "Tell me M.A Political Science fees details",
+    "What is M.A Political Science program fees in ODM College?",
+    "What is the M.A Political Science fees in ODM College Muklan?",
+    "M.A Political Science fees structure in ODM College?",
+    "How much is the annual fees for M.A Political Science in ODM College?",
+    "What is the total fees for M.A Political Science course?",
+    "M.A Political Science course fees details in ODM College for Women?",
+    "What is the first year fees for M.A Political Science?",
+    "M.A Political Science fees per year in ODM College?",
+    "fees structure of M.A Political Science in ODM College for Women Muklan?",
+    "How much does M.A Political Science cost in ODM College Hisar?",
+    "Is M.A Political Science fees affordable in ODM College?",
+    "What are the charges for M.A Political Science admission?",
+    "Does ODM College provide installment facility for M.A Political Science fees?",
+    "What is the complete fees of M.A Political Science course?",
+    "What is the duration of M.A Political Science?",
+    "How long is M.A Political Science course?",
+    "M.A Political Science course duration?",
+    "How many years is M.A Political Science?",
+    "How many semesters are there in M.A Political Science?",
+    "Tell me M.A Political Science course details",
+    "Is M.A Political Science a postgraduate course?",
+    "What is the duration and fees of M.A Political Science?",
+    "Details of M.A Political Science in ODM College Muklan?"
+  ],
+  "responses": [
+    "M.A Political Science at ODM College for Women, Muklan (Hisar) is a 2-year Postgraduate Degree course divided into 4 semesters. The total annual fees is ₹25,000 per year."
+  ]
+},
+{
+  "tag": "pg_ma_history_details",
+  "patterns": [
+    "What is the fees for M.A History?",
+    "fees of M.A History?",
+    "M.A History fees?",
+    "How much is the M.A History fees?",
+    "What is the annual fees for M.A History?",
+    "Total fees of M.A History?",
+    "Per year fees for M.A History?",
+    "M.A History course fees structure?",
+    "What are the charges for M.A History?",
+    "How much does M.A History cost?",
+    "Is M.A History expensive?",
+    "Semester fees of M.A History?",
+    "Installment facility for M.A History fees?",
+    "What is the tuition fees for M.A History?",
+    "M.A History first year fees?",
+    "M.A History admission fees?",
+    "Tell me M.A History fees details",
+    "What is M.A History program fees in ODM College?",
+    "What is the M.A History fees in ODM College Muklan?",
+    "M.A History fees structure in ODM College?",
+    "How much is the annual fees for M.A History in ODM College?",
+    "What is the total fees for M.A History course?",
+    "M.A History course fees details in ODM College for Women?",
+    "What is the first year fees for M.A History?",
+    "M.A History fees per year in ODM College?",
+    "fees structure of M.A History in ODM College for Women Muklan?",
+    "How much does M.A History cost in ODM College Hisar?",
+    "Is M.A History fees affordable in ODM College?",
+    "What are the charges for M.A History admission?",
+    "Does ODM College provide installment facility for M.A History fees?",
+    "What is the complete fees of M.A History course?",
+    "What is the duration of M.A History?",
+    "How long is M.A History course?",
+    "M.A History course duration?",
+    "How many years is M.A History?",
+    "How many semesters are there in M.A History?",
+    "Is M.A History a postgraduate course?",
+    "Tell me complete details of M.A History in ODM College?"
+  ],
+  "responses": [
+    "M.A History at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. The total annual fees is ₹25,000 per year."
+  ]
+},
+
+    {
+  "tag": "eligibility_ba",
+  "patterns": [
+    "Eligibility for B.A?",
+    "What is the eligibility for B.A?",
+    "Who can apply for B.A?",
+    "What qualification is required for B.A?",
+    "Can I take admission in B.A after 12th?",
+    "Minimum qualification for B.A?",
+    "What are the requirements for B.A admission?",
+    "B.A eligibility criteria?",
+    "Is 12th required for B.A?",
+    "Can commerce student apply for B.A?",
+    "Can science student apply for B.A?",
+    "Can arts student apply for B.A?",
+    "Is B.A available after 12th?",
+    "What marks are required for B.A?",
+    "Admission criteria for B.A?",
+    "What is the basic requirement for B.A course?",
+    "Can I join B.A after senior secondary?",
+    "Eligibility for B.A in ODM College?",
+    "What is the eligibility for B.A in ODM College Muklan?",
+    "Who is eligible for B.A in ODM College for Women?",
+    "B.A admission qualification?",
+    "Do I need to pass 12th for B.A?",
+    "Can I do B.A after passing 12th class?"
+  ],
+  "responses": [
+    "For admission to B.A at ODM College for Women, Muklan (Hisar), the student must have passed 12th (Senior Secondary) from a recognized board."
+  ]
+},
+{
+  "tag": "eligibility_bcom",
+  "patterns": [
+    "Eligibility for B.Com?",
+    "What is the eligibility for B.Com?",
+    "Who can apply for B.Com?",
+    "What qualification is required for B.Com?",
+    "Can I take admission in B.Com after 12th?",
+    "Minimum qualification for B.Com?",
+    "What are the requirements for B.Com admission?",
+    "B.Com eligibility criteria?",
+    "Is 12th required for B.Com?",
+    "Can commerce student apply for B.Com?",
+    "Can science student apply for B.Com?",
+    "Can arts student apply for B.Com?",
+    "Is B.Com available after 12th?",
+    "What marks are required for B.Com?",
+    "Admission criteria for B.Com?",
+    "What is the basic requirement for B.Com course?",
+    "Can I join B.Com after senior secondary?",
+    "Eligibility for B.Com in ODM College?",
+    "What is the eligibility for B.Com in ODM College Muklan?",
+    "Who is eligible for B.Com in ODM College for Women?",
+    "B.Com admission qualification?",
+    "Do I need to pass 12th for B.Com?",
+    "Can I do B.Com after passing 12th class?"
+  ],
+  "responses": [
+    "For admission to B.Com at ODM College for Women, Muklan (Hisar), the student must have passed 12th Commerce (Senior Secondary) from a recognized board."
+  ]
+},
+{
+  "tag": "eligibility_bsc_non_medical",
+  "patterns": [
+    "Eligibility for B.Sc Non Medical?",
+    "What is the eligibility for B.Sc Non Medical?",
+    "Who can apply for B.Sc Non Medical?",
+    "What qualification is required for B.Sc Non Medical?",
+    "Can I take admission in B.Sc Non Medical after 12th?",
+    "Minimum qualification for B.Sc Non Medical?",
+    "What are the requirements for B.Sc Non Medical admission?",
+    "B.Sc Non Medical eligibility criteria?",
+    "Is 12th required for B.Sc Non Medical?",
+    "Can commerce student apply for B.Sc Non Medical?",
+    "Can science student apply for B.Sc Non Medical?",
+    "Can arts student apply for B.Sc Non Medical?",
+    "Is B.Sc Non Medical available after 12th?",
+    "What marks are required for B.Sc Non Medical?",
+    "Admission criteria for B.Sc Non Medical?",
+    "What is the basic requirement for B.Sc Non Medical course?",
+    "Can I join B.Sc Non Medical after senior secondary?",
+    "Eligibility for B.Sc Non Medical in ODM College?",
+    "What is the eligibility for B.Sc Non Medical in ODM College Muklan?",
+    "Who is eligible for B.Sc Non Medical in ODM College for Women?",
+    "B.Sc Non Medical admission qualification?",
+    "Do I need to pass 12th for B.Sc Non Medical?",
+    "Can I do B.Sc Non Medical after passing 12th class?",
+    "Is PCM required for B.Sc Non Medical?",
+    "Can I take B.Sc Non Medical without Mathematics?"
+  ],
+  "responses": [
+    "For admission to B.Sc Non Medical at ODM College for Women, Muklan (Hisar), the student must have passed 12th (Senior Secondary) with Science stream (Physics, Chemistry and Mathematics) from a recognized board."
+  ]
+},
+{
+  "tag": "eligibility_bsc_physical_science",
+  "patterns": [
+    "Eligibility for B.Sc Physical Science?",
+    "What is the eligibility for B.Sc Physical Science?",
+    "Who can apply for B.Sc Physical Science?",
+    "What qualification is required for B.Sc Physical Science?",
+    "Can I take admission in B.Sc Physical Science after 12th?",
+    "Minimum qualification for B.Sc Physical Science?",
+    "What are the requirements for B.Sc Physical Science admission?",
+    "B.Sc Physical Science eligibility criteria?",
+    "Is 12th required for B.Sc Physical Science?",
+    "Can commerce student apply for B.Sc Physical Science?",
+    "Can science student apply for B.Sc Physical Science?",
+    "Can arts student apply for B.Sc Physical Science?",
+    "Is B.Sc Physical Science available after 12th?",
+    "What marks are required for B.Sc Physical Science?",
+    "Admission criteria for B.Sc Physical Science?",
+    "What is the basic requirement for B.Sc Physical Science course?",
+    "Can I join B.Sc Physical Science after senior secondary?",
+    "Eligibility for B.Sc Physical Science in ODM College?",
+    "What is the eligibility for B.Sc Physical Science in ODM College Muklan?",
+    "Who is eligible for B.Sc Physical Science in ODM College for Women?",
+    "B.Sc Physical Science admission qualification?",
+    "Do I need to pass 12th for B.Sc Physical Science?",
+    "Can I do B.Sc Physical Science after passing 12th class?"
+  ],
+  "responses": [
+    "For admission to B.Sc Physical Science at ODM College for Women, Muklan (Hisar), the student must have passed 12th (Senior Secondary) with Science stream from a recognized board."
+  ]
+},
+{
+  "tag": "eligibility_bsc_cs",
+  "patterns": [
+    "Eligibility for B.Sc Computer Science?",
+    "What is the eligibility for B.Sc Computer Science?",
+    "Who can apply for B.Sc Computer Science?",
+    "What qualification is required for B.Sc Computer Science?",
+    "Can I take admission in B.Sc Computer Science after 12th?",
+    "Minimum qualification for B.Sc Computer Science?",
+    "What are the requirements for B.Sc Computer Science admission?",
+    "B.Sc Computer Science eligibility criteria?",
+    "Is 12th required for B.Sc Computer Science?",
+    "Can commerce student apply for B.Sc Computer Science?",
+    "Can science student apply for B.Sc Computer Science?",
+    "Can arts student apply for B.Sc Computer Science?",
+    "Is B.Sc Computer Science available after 12th?",
+    "What marks are required for B.Sc Computer Science?",
+    "Admission criteria for B.Sc Computer Science?",
+    "What is the basic requirement for B.Sc Computer Science course?",
+    "Can I join B.Sc Computer Science after senior secondary?",
+    "Eligibility for B.Sc Computer Science in ODM College?",
+    "What is the eligibility for B.Sc Computer Science in ODM College Muklan?",
+    "Who is eligible for B.Sc Computer Science in ODM College for Women?",
+    "B.Sc Computer Science admission qualification?",
+    "Do I need to pass 12th for B.Sc Computer Science?",
+    "Can I do B.Sc Computer Science after passing 12th class?"
+  ],
+  "responses": [
+    "For admission to B.Sc Computer Science at ODM College for Women, Muklan (Hisar), the student must have passed 12th (Senior Secondary) with Science stream from a recognized board."
+  ]
+},
+{
+  "tag": "eligibility_bsc_life_science",
+  "patterns": [
+    "Eligibility for B.Sc Life Science?",
+    "What is the eligibility for B.Sc Life Science?",
+    "Who can apply for B.Sc Life Science?",
+    "What qualification is required for B.Sc Life Science?",
+    "Can I take admission in B.Sc Life Science after 12th?",
+    "Minimum qualification for B.Sc Life Science?",
+    "What are the requirements for B.Sc Life Science admission?",
+    "B.Sc Life Science eligibility criteria?",
+    "Is 12th required for B.Sc Life Science?",
+    "Can commerce student apply for B.Sc Life Science?",
+    "Can science student apply for B.Sc Life Science?",
+    "Can medical student apply for B.Sc Life Science?",
+    "Is B.Sc Life Science available after 12th?",
+    "What marks are required for B.Sc Life Science?",
+    "Admission criteria for B.Sc Life Science?",
+    "What is the basic requirement for B.Sc Life Science course?",
+    "Can I join B.Sc Life Science after senior secondary?",
+    "Eligibility for B.Sc Life Science in ODM College?",
+    "What is the eligibility for B.Sc Life Science in ODM College Muklan?",
+    "Who is eligible for B.Sc Life Science in ODM College for Women?",
+    "B.Sc Life Science admission qualification?",
+    "Do I need to pass 12th (Medical) for B.Sc Life Science?",
+    "Can I do B.Sc Life Science after passing 12th class?"
+  ],
+  "responses": [
+    "For admission to B.Sc Life Science at ODM College for Women, Muklan (Hisar), the student must have passed 12th (Senior Secondary) with Medical stream (Biology) from a recognized board."
+  ]
+},
+{
+  "tag": "eligibility_bsc_medical",
+  "patterns": [
+    "Eligibility for B.Sc Medical?",
+    "What is the eligibility for B.Sc Medical?",
+    "Who can apply for B.Sc Medical?",
+    "What qualification is required for B.Sc Medical?",
+    "Can I take admission in B.Sc Medical after 12th?",
+    "Minimum qualification for B.Sc Medical?",
+    "What are the requirements for B.Sc Medical admission?",
+    "B.Sc Medical eligibility criteria?",
+    "Is 12th required for B.Sc Medical?",
+    "Can commerce student apply for B.Sc Medical?",
+    "Can science student apply for B.Sc Medical?",
+    "Can arts student apply for B.Sc Medical?",
+    "Is B.Sc Medical available after 12th?",
+    "What marks are required for B.Sc Medical?",
+    "Admission criteria for B.Sc Medical?",
+    "What is the basic requirement for B.Sc Medical course?",
+    "Can I join B.Sc Medical after senior secondary?",
+    "Eligibility for B.Sc Medical in ODM College?",
+    "What is the eligibility for B.Sc Medical in ODM College Muklan?",
+    "Who is eligible for B.Sc Medical in ODM College for Women?",
+    "B.Sc Medical admission qualification?",
+    "Do I need to pass 12th for B.Sc Medical?",
+    "Can I do B.Sc Medical after passing 12th class?",
+    "Is medical stream required for B.Sc Medical?",
+    "Is PCB required for B.Sc Medical?",
+    "Can non-medical student apply for B.Sc Medical?"
+  ],
+  "responses": [
+    "For admission to B.Sc Medical at ODM College for Women, Muklan (Hisar), the student must have passed 12th (Senior Secondary) with Medical stream (Physics, Chemistry, Biology) from a recognized board."
+  ]
+},
+{
+  "tag": "pg_seat_availability",
+  "patterns": [
+    "How many seats are available in M.Com?",
+    "Number of seats in M.Com?",
+    "Total seats for M.Com in ODM College?",
+    "Seat intake of M.Com?",
+    "How many students can take admission in M.Com?",
+    
+    "How many seats are available in M.Sc Mathematics?",
+    "Number of seats in M.Sc Mathematics?",
+    "Total seats for M.Sc Mathematics in ODM College?",
+    "Seat intake of M.Sc Maths?",
+    "How many students can take admission in M.Sc Mathematics?",
+    
+    "How many seats are available in M.Sc Physics?",
+    "Number of seats in M.Sc Physics?",
+    "Total seats for M.Sc Physics in ODM College?",
+    "Seat intake of M.Sc Physics?",
+    "How many students can take admission in M.Sc Physics?",
+    
+    "How many seats are available in M.Sc Chemistry?",
+    "Number of seats in M.Sc Chemistry?",
+    "Total seats for M.Sc Chemistry in ODM College?",
+    "Seat intake of M.Sc Chemistry?",
+    "How many students can take admission in M.Sc Chemistry?",
+    
+    "How many seats are available in M.Sc Computer Science?",
+    "Number of seats in M.Sc Computer Science?",
+    "Total seats for M.Sc Computer Science in ODM College?",
+    "Seat intake of M.Sc Computer Science?",
+    "How many students can take admission in M.Sc Computer Science?",
+    
+    "Seat availability in PG courses?",
+    "PG course seat details in ODM College?",
+    "Number of seats in postgraduate courses?",
+    "Seat intake for M.Com and M.Sc courses in ODM College?"
+  ],
+  "responses": [
+    "Seat availability at ODM College for Women, Muklan (Hisar) is as follows: M.Com: 40 seats, M.Sc Mathematics: 40 seats, M.Sc Physics: 40 seats, M.Sc Chemistry: 40 seats, and M.Sc Computer Science: 40 seats."
+  ]
+},
+{
+  "tag": "pg_ma_political_science_seats",
+  "patterns": [
+    "How many seats are available in M.A Political Science?",
+    "Number of seats in M.A Political Science?",
+    "Total seats for M.A Political Science?",
+    "Seat intake of M.A Political Science?",
+    "How many students can take admission in M.A Political Science?",
+    "What is the seat capacity of M.A Political Science?",
+    "Available seats in M.A Political Science in ODM College?",
+    "How many seats are there in M.A Political Science in ODM College Muklan?",
+    "M.A Political Science admission seats?",
+    "Seat strength of M.A Political Science?",
+    "Maximum intake for M.A Political Science?",
+    "Is seat limited in M.A Political Science?",
+    "How many seats are offered in M.A Political Science?"
+  ],
+  "responses": [
+    "There are 60 seats available for M.A Political Science at ODM College for Women, Muklan (Hisar)."
+  ]
+},
+{
+  "tag": "pg_ma_history_seats",
+  "patterns": [
+    "How many seats are available in M.A History?",
+    "Number of seats in M.A History?",
+    "Total seats for M.A History?",
+    "Seat intake of M.A History?",
+    "How many students can take admission in M.A History?",
+    "What is the seat capacity of M.A History?",
+    "Available seats in M.A History in ODM College?",
+    "How many seats are there in M.A History in ODM College Muklan?",
+    "M.A History admission seats?",
+    "Seat strength of M.A History?",
+    "Maximum intake for M.A History?",
+    "Is seat limited in M.A History?",
+    "How many seats are offered in M.A History?"
+  ],
+  "responses": [
+    "There are 60 seats available for M.A History at ODM College for Women, Muklan (Hisar)."
+  ]
+},
+
+  {
+    "tag": "pg_mcom_full_details",
+    "patterns": [
+      "M.Com admission details?",
+      "Eligibility for M.Com?",
+      "Seats in M.Com?",
+      "How many seats in M.Com?",
+      "Can I apply for M.Com?",
+      "M.Com course details in ODM College?"
+    ],
+    "responses": [
+      "M.Com at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. Eligibility: B.Com or equivalent degree from a recognized university. Total Seats: 60."
+    ]
+  },
+  {
+    "tag": "pg_msc_mathematics_full_details",
+    "patterns": [
+      "M.Sc Mathematics admission details?",
+      "Eligibility for M.Sc Mathematics?",
+      "Seats in M.Sc Mathematics?",
+      "How many seats in M.Sc Maths?",
+      "Can I apply for M.Sc Mathematics?",
+      "M.Sc Mathematics course details?"
+    ],
+    "responses": [
+      "M.Sc Mathematics at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. Eligibility: B.Sc with Mathematics from a recognized university. Total Seats: 60."
+    ]
+  },
+  {
+    "tag": "pg_msc_physics_full_details",
+    "patterns": [
+      "M.Sc Physics admission details?",
+      "Eligibility for M.Sc Physics?",
+      "Seats in M.Sc Physics?",
+      "How many seats in M.Sc Physics?",
+      "Can I apply for M.Sc Physics?",
+      "M.Sc Physics course details?"
+    ],
+    "responses": [
+      "M.Sc Physics at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. Eligibility: B.Sc with Physics from a recognized university. Total Seats: 60."
+    ]
+  },
+  {
+    "tag": "pg_msc_chemistry_full_details",
+    "patterns": [
+      "M.Sc Chemistry admission details?",
+      "Eligibility for M.Sc Chemistry?",
+      "Seats in M.Sc Chemistry?",
+      "How many seats in M.Sc Chemistry?",
+      "Can I apply for M.Sc Chemistry?",
+      "M.Sc Chemistry course details?"
+    ],
+    "responses": [
+      "M.Sc Chemistry at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. Eligibility: B.Sc with Chemistry from a recognized university. Total Seats: 60."
+    ]
+  },
+  {
+    "tag": "pg_msc_computer_science_full_details",
+    "patterns": [
+      "M.Sc Computer Science admission details?",
+      "Eligibility for M.Sc Computer Science?",
+      "Seats in M.Sc Computer Science?",
+      "How many seats in M.Sc Computer Science?",
+      "Can I apply for M.Sc Computer Science?",
+      "M.Sc Computer Science course details?"
+    ],
+    "responses": [
+      "M.Sc Computer Science at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. Eligibility: B.Sc Computer Science / BCA or equivalent degree from a recognized university. Total Seats: 60."
+    ]
+  },
+  {
+    "tag": "pg_ma_political_science_full_details",
+    "patterns": [
+      "M.A Political Science admission details?",
+      "Eligibility for M.A Political Science?",
+      "Seats in M.A Political Science?",
+      "How many seats in M.A Political Science?",
+      "Can I apply for M.A Political Science?",
+      "M.A Political Science course details?"
+    ],
+    "responses": [
+      "M.A Political Science at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. Eligibility: Bachelor's degree in any stream from a recognized university. Total Seats: 60."
+    ]
+  },
+  {
+    "tag": "pg_ma_history_full_details",
+    "patterns": [
+      "M.A History admission details?",
+      "Eligibility for M.A History?",
+      "Seats in M.A History?",
+      "How many seats in M.A History?",
+      "Can I apply for M.A History?",
+      "M.A History course details?"
+    ],
+    "responses": [
+      "M.A History at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. Eligibility: Bachelor's degree in any stream from a recognized university. Total Seats: 60."
+    ]
+  },
+   {
+  "tag": "admission",
+  "patterns": [
+    "How can I apply?",
+    "What is the admission process?",
+    "Tell me the admission procedure.",
+    "How do I get admission in ODM College?",
+    "What are the eligibility criteria for admission?",
+    "Is admission open for this year?",
+    "Where can I apply for admission?",
+    "Do I need to meet any specific requirements for admission?",
+    "Is admission based on merit or entrance exam?",
+    "Can you guide me on applying to ODM College?",
+    "What documents are required for admission?",
+    "Is there an online application form for admission?",
+    "How do I submit my application?",
+    "Are there any feess for admission?",
+    "What is the last date to apply for admission?",
+    "Do I need recommendations for admission?",
+    "Can I apply directly to the college?",
+    "How competitive is the admission process?",
+    "Are there any quotas or reservations for admission?",
+    "Do international students get admission here?"
+  ],
+  "responses": [
+    "Admission is strictly on merit basis as per DHE Govt. of Haryana."
+  ]
+},
+
+{
+  "tag": "courses_available",
+  "patterns": [
+    "what courses are available",
+    "what courses are offered",
+    "available courses",
+    "list of courses",
+    "which programs are available",
+    "courses in odm college",
+    "what can i study here",
+	 "what courses are available",
+    "what courses are offered",
+    "list all courses",
+    "available programs",
+    "courses in odm college",
+    "ug and pg courses",
+    "what can i study here",
+    "complete course list",
+	 "what undergraduate courses are available",
+    "ug courses",
+    "bachelor courses",
+    "graduation courses",
+    "list of ug programs",
+    "what are the bachelor programs",
+    "courses after 12th",
+	 "what postgraduate courses are available",
+    "pg courses",
+    "master courses",
+    "post graduation programs",
+    "list of pg programs",
+    "masters courses in odm college",
+	"what couses are available in odm",
+	"what couses are available in odm college"
+  ],
+  "responses": [
+    "ODM College for Women, Muklan offers the following courses:\n\nUndergraduate Programs:\nB.A\nB.Com\nB.Sc Physical Science (Non-Medical)\nB.Sc Computer Science (Non-Medical)\nB.Sc Medical\n\nPostgraduate Programs:\nM.Com\nM.Sc Mathematics\nM.Sc Physics\nM.Sc Chemistry\nM.Sc Computer Science\nM.A Political Science\nM.A History"
+  ]
+},
+{
+  "tag": "course_availability",
+  "patterns": [
+
+    "is b.a available",
+    "is ba available",
+    "is ba available in odm",
+    "does odm offer ba",
+    "can i study ba here",
+
+    "is bcom available",
+    "is b.com available",
+    "is bcom available in odm",
+    "does odm offer bcom",
+    "can i take admission in bcom",
+
+    "is bsc medical available",
+    "is b.sc medical available",
+    "does odm offer bsc medical",
+    "can i study bsc medical here",
+
+    "is bsc non medical available",
+    "is bsc physical science available",
+    "does odm offer bsc physical science",
+    "can i study bsc non medical",
+
+    "is bsc computer science available",
+    "does odm offer bsc computer science",
+    "can i take bsc cs",
+    "is bsc cs available",
+
+    "is mcom available",
+    "is m.com available",
+    "does odm offer mcom",
+    "can i study mcom here",
+
+    "is msc maths available",
+    "is msc mathematics available",
+    "does odm offer msc maths",
+    "can i take msc maths",
+
+    "is msc physics available",
+    "does odm offer msc physics",
+    "can i study msc physics",
+
+    "is msc chemistry available",
+    "does odm offer msc chemistry",
+    "can i take msc chemistry",
+
+    "is msc computer science available",
+    "does odm offer msc computer science",
+    "can i study msc cs",
+
+    "is ma political science available",
+    "does odm offer ma political science",
+    "can i take ma political science",
+
+    "is ma history available",
+    "does odm offer ma history",
+    "can i study ma history"
+
+  ],
+  "responses": [
+    "Yes, this course is available at ODM College for Women, Muklan. For detailed information about eligibility and feess, please contact the college office."
+  ]
+},
+{
+  "tag": "official_website",
+  "patterns": [
+    "what is the official website of odm college",
+    "odm college official website",
+    "what is odm website",
+    "give me odm website link",
+    "college website",
+    "official site of odm",
+    "is there a website of odm college",
+    "how can i visit odm college website",
+    "website of odm college for women",
+    "odm college muklan website",
+    "where can i find odm college online",
+    "provide website address of odm",
+    "can you share odm website",
+    "what is the web address of odm college",
+    "odm college online portal",
+    "odm college web link",
+    "tell me the website of odm",
+    "how to check odm college website"
+  ],
+  "responses": [
+    "The official website of ODM College for Women, Muklan (Hisar) is:\n\nwww.odmcollege.com\n\nYou can visit the website for admission details, courses, notices, and other updates."
+  ]
+},
+{
+  "tag": "other",
+  "patterns": [
+    "are there any other courses available",
+    "what other courses are available",
+    "any other programs in odm",
+    "apart from this what courses are available",
+    "other courses in odm college",
+    "more courses available",
+    "different courses offered",
+    "is there any other course",
+    "what else can i study here",
+    "other ug courses",
+    "other pg courses",
+    "any more graduation courses",
+    "any more post graduation courses",
+    "apart from bcom what else is available",
+    "apart from ba what else can i take",
+    "apart from bsc what other courses are there",
+    "tell me other available programs",
+    "what are the remaining courses",
+    "any additional courses in odm college",
+	"tell me about hkcl",
+	"about hkcl",
+	"hkcl",
+	"HKCL"
+  ],
+  "responses": [
+    "ODM College for Women, Muklan offers the following additional courses:\n HKCL(Haryana Knowledge Corporation Limited):\n HSCIT(Duration:3Months, Fee:4000Rs)\n HSCIT A(Duration:6Months, Fee:8000Rs)\n HSCIT A+(Duration:1 Year, Fee:16000Rs)\nFor detailed information, please visit the college website or contact the office."
+  ]
+},
+{
+  "tag": "contact",
+  "patterns": [
+    "what is the contact number of odm college",
+    "odm college contact details",
+    "how can i contact odm college",
+    "phone number of odm college",
+    "call odm college",
+    "college phone number",
+    "odm college office contact",
+    "contact number of odm college for women",
+    "how to reach college by phone",
+    "does odm college have email",
+    "email of odm college",
+    "odm college email address",
+    "how to contact odm college by email",
+    "tell me the contact details of odm college",
+    "contact information of odm college",
+    "where can i find odm college contact info",
+    "odm college office phone",
+    "college contact",
+    "contact no of odm college",
+    "contact data for odm college",
+    "contact number and email for odm college",
+    "who do i contact for admission",
+    "contact admissions office odm college",
+    "who can i call for admission information",
+    "contact details for principal",
+    "contact details of director",
+    "contact address of odm college",
+    "what is the official phone of odm college",
+    "how to contact college office"
+  ],
+  "responses": [
+    "ODM College for Women, Muklan (Hisar) contact details are:\n\n Phone:8926357000, 8926457000, 8926557000, 9899677890, 9315515131\n Email:odmhisar@yahoo.com, odmcollegehisar@gmail.com\n Website: www.odmcollege.com\n\nYou can reach the college office during working hours for admission queries and general information."
+  ]
+},
+{
+  "tag": "nss",
+  "patterns": [
+    "what is nss",
+    "full form of nss",
+    "nss full form",
+    "what does nss stand for",
+    "is nss available in odm college",
+    "does odm college have nss",
+    "tell me about nss",
+    "nss information",
+    "nss details",
+    "about nss in odm college",
+    "what activities are done in nss",
+    "nss activities",
+    "who can join nss",
+    "how to join nss",
+    "benefits of nss",
+    "why should i join nss",
+    "nss unit in odm college",
+    "is there nss in college",
+    "nss program details",
+    "what is the role of nss",
+    "nss ka full form kya hai",
+    "nss kya hai",
+    "nss program in odm college",
+    "how many nss units are there",
+    "nss camp details",
+    "special camp in nss",
+    "nss volunteer information"
+  ],
+  "responses": [
+    "NSS stands for National Service Scheme.\n\nNSS is available at ODM College for Women, Muklan. It is a government-sponsored program that encourages students to participate in community service activities like cleanliness drives, blood donation camps, awareness programs, plantation drives, and social welfare activities.\n\nStudents can join NSS to develop leadership skills, social responsibility, and personality development."
+  ]
+},
+{
+  "tag": "ncc",
+  "patterns": [
+    "what is ncc",
+    "full form of ncc",
+    "ncc ka full form kya hai",
+    "what does ncc stand for",
+    "is ncc available in odm college",
+    "does odm college have ncc",
+    "is there ncc in college",
+    "can i join ncc in odm",
+    "how to join ncc",
+    "procedure to join ncc",
+    "who can join ncc",
+    "eligibility for ncc",
+    "what are the benefits of ncc",
+    "advantages of ncc",
+    "why should i join ncc",
+    "ncc activities in college",
+    "what activities are done in ncc",
+    "does ncc provide certificate",
+    "ncc certificate details",
+    "what is ncc a b c certificate",
+    "is ncc helpful for government jobs",
+    "ncc camps information",
+    "does ncc conduct camps",
+    "about ncc in odm college",
+    "tell me about ncc",
+    "ncc details",
+    "ncc information",
+    "is ncc compulsory",
+    "ncc training details"
+  ],
+  "responses": [
+    "NCC stands for National Cadet Corps.\n\nNCC is available at ODM College for Women, Muklan.\n\nStudents can join NCC to develop discipline, leadership, and patriotism. NCC provides training, camps, and certificates (A, B, and C certificates).\n\nNCC certificates are helpful for government jobs and defense services.\n\nFor joining procedure and eligibility details, please contact the college office."
+  ]
+},
+{
+  "tag": "sports_information",
+  "patterns": [
+    "is sports available in odm college",
+    "does odm college have sports facility",
+    "sports in odm college",
+    "what sports are available",
+    "which games are available in college",
+    "sports facilities in odm",
+    "does college have playground",
+    "is there sports ground in odm",
+    "indoor games in odm college",
+    "outdoor games in odm college",
+    "what indoor games are available",
+    "what outdoor games are available",
+    "sports activities in college",
+    "does odm organize sports events",
+    "annual sports day in odm",
+    "does college conduct sports competition",
+    "can students participate in sports",
+    "how to join sports in odm",
+    "sports achievements of odm college",
+    "does odm participate in inter college sports",
+    "is there sports quota admission",
+    "sports scholarship in odm",
+    "who is sports incharge",
+    "sports department details",
+    "about sports in odm college",
+    "tell me about sports facilities",
+    "games available in odm",
+    "is sports compulsory in college",
+    "does odm provide coaching for sports",
+    "physical education in odm college"
+  ],
+  "responses": [
+    "ODM College for Women, Muklan provides sports facilities for students.\n\nThe college organizes various indoor and outdoor games, annual sports events, and competitions.\n\nStudents can participate in different sports activities to improve their physical fitness and teamwork skills.\n\nFor detailed information about specific games, sports quota, or sports incharge, please contact the college office."
+  ]
+},
+{
+  "tag": "infrastructure_facilities",
+  "patterns": [
+    "what infrastructure facilities are available",
+    "infrastructure facilities in odm college",
+    "tell me about infrastructure of odm college",
+    "facilities available in college",
+    "college infrastructure details",
+    "does odm have good infrastructure",
+    
+    "is library available in odm",
+    "does college have library",
+    "well stocked library in odm",
+    "library facilities in odm college",
+    
+    "is reading room available",
+    "does college have reading room",
+    "reading room facility in odm",
+    
+    "are playgrounds available",
+    "does odm have playground",
+    "playground facility in college",
+    
+    "is sports room available",
+    "does college have sports room",
+    
+    "is multimedia classroom available",
+    "does odm have smart classroom",
+    "multi media classroom in odm",
+    
+    "is lab available in odm",
+    "does college have well equipped lab",
+    "laboratory facilities in odm",
+    
+    "what is teaching learning resource room",
+    "is teaching learning resource room available",
+    "does odm have tlr room",
+    
+    "is transport facility available",
+    "does odm provide transport",
+    "transport facility from hisar",
+    "transport facility from siwani",
+    "bus facility in odm college",
+    "transport from nearby villages",
+    
+    "about college facilities",
+    "odm college facilities details",
+    "campus facilities in odm"
+  ],
+  "responses": [
+    "ODM College for Women, Muklan provides excellent infrastructure facilities including:\n\n• Well-Stocked Library\n• Reading Room\n• Playgrounds\n• Sports Room\n• Multi-Media Classrooms\n• Well Equipped Laboratories\n• Teaching Learning Resource Room\n• Transport Facility from Hisar, Siwani and Nearby Villages\n\nFor more detailed information, please contact the college office."
+  ]
+},
+    {
+  "tag": "goodbye",
+  "patterns": [
+    "Bye",
+    "Goodbye",
+    "Thank you",
+    "Thanks",
+    "See you later",
+    "Catch you later",
+    "Talk to you later",
+    "Have a good day",
+    "Have a nice day",
+    "I am leaving now",
+    "I have to go",
+    "Thanks for your help",
+    "Thanks a lot",
+    "Thanks for the information",
+    "See you soon",
+    "See you",
+    "Later",
+    "Bye for now",
+    "Farewell",
+    "I am done here",
+	"bye bye tata",
+	"tata bye bye",
+	"by"
+	
+  ],
+  "responses": [
+    "Thank you for contacting ODM College. Have a great day!",
+    "Goodbye! feesl free to reach out to ODM College anytime.",
+    "Thanks for visiting! Wishing you a wonderful day."
+  ]
+}
+  ]
+} 
