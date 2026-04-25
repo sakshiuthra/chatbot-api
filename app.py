@@ -1,12 +1,10 @@
 from flask import Flask, request, jsonify, render_template_string
 import json
 import random
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
 
 app = Flask(__name__)
 
-# Load intents safely
+# Load intents
 try:
     with open("intents.json") as file:
         data = json.load(file)
@@ -14,49 +12,20 @@ except Exception as e:
     print("Error loading intents.json:", e)
     exit(1)
 
-patterns = []
-tags = []
 
-for intent in data["intents"]:
-    for pattern in intent["patterns"]:
-        patterns.append(pattern)
-        tags.append(intent["tag"])
-
-# ❗ Lazy loading (IMPORTANT FIX)
-vectorizer = None
-model = None
-
-def train_model():
-    global vectorizer, model
-
-    if model is None:
-        print("Training model...")
-
-        vectorizer = TfidfVectorizer()
-        X = vectorizer.fit_transform(patterns)
-
-        model = LogisticRegression()
-        model.fit(X, tags)
-
-        print("Model trained successfully")
-
-
+# ✅ Simple matching function (lightweight)
 def chatbot_response(user_input):
-    train_model()  # ✅ load only when needed
-
-    user_vector = vectorizer.transform([user_input])
-    prediction = model.predict(user_vector)[0]
-    probability = max(model.predict_proba(user_vector)[0])
-
-    if probability < 0.15:
-        return "For more details, please contact ODM College office."
+    user_input = user_input.lower()
 
     for intent in data["intents"]:
-        if intent["tag"] == prediction:
-            return random.choice(intent["responses"])
+        for pattern in intent["patterns"]:
+            if pattern.lower() in user_input:
+                return random.choice(intent["responses"])
+
+    return "For more details, please contact ODM College office."
 
 
-# ✅ Home page (browser UI)
+# ✅ UI for browser
 @app.route("/")
 def home():
     return render_template_string("""
@@ -93,26 +62,23 @@ def home():
     """)
 
 
-# ✅ Chat route (GET + POST)
+# ✅ Chat API
 @app.route("/chat", methods=["GET", "POST"])
 def chat():
 
-    # GET (browser testing)
+    # GET (browser)
     if request.method == "GET":
-        user_input = request.args.get("message", "")
-
-        if not user_input:
+        msg = request.args.get("message", "")
+        if not msg:
             return jsonify({"response": "Use ?message=hello"})
-
-        return jsonify({"response": chatbot_response(user_input)})
+        return jsonify({"response": chatbot_response(msg)})
 
     # POST (API)
-    data = request.get_json(silent=True)
-
-    if not data or "message" not in data:
+    data_req = request.get_json(silent=True)
+    if not data_req or "message" not in data_req:
         return jsonify({"response": "Please send a message."})
 
-    return jsonify({"response": chatbot_response(data["message"])})
+    return jsonify({"response": chatbot_response(data_req["message"])})
 
 
 if __name__ == "__main__":
