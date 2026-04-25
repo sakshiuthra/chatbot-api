@@ -39,15 +39,17 @@ def chatbot_response(user_input):
 @app.route("/")
 def home():
     return "Chatbot is running!"
-    
+
 @app.route("/chat", methods=["POST"])
 def chat():
     user_input = request.json.get("message", "")
-if not user_input:
-    return jsonify({"response": "Please send a message."})
+    
+    if not user_input:
+        return jsonify({"response": "Please send a message."})
+
     response = chatbot_response(user_input)
     return jsonify({"response": response})
 
 if __name__ == "__main__":
     import os
-app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
