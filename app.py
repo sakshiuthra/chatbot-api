@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify, render_template_string
+from flask_cors import CORS
 import json
 import random
 
 app = Flask(__name__)
+CORS(app)
 
 # Load intents
 try:
@@ -10,32 +12,34 @@ try:
         data = json.load(file)
 except Exception as e:
     print("Error loading intents.json:", e)
-    exit(1)
+    data = {"intents": []}
 
 
-# ✅ Simple matching function (lightweight)
+# Chatbot logic
 def chatbot_response(user_input):
     user_input = user_input.lower()
 
-    for intent in data["intents"]:
-        for pattern in intent["patterns"]:
+    for intent in data.get("intents", []):
+        for pattern in intent.get("patterns", []):
             if pattern.lower() in user_input:
-                return random.choice(intent["responses"])
+                responses = intent.get("responses", [])
+                if responses:
+                    return random.choice(responses)
 
     return "For more details, please contact ODM College office."
 
 
-# ✅ UI for browser
+# UI (for testing)
 @app.route("/")
 def home():
     return render_template_string("""
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Chatbot</title>
+        <title>ODM Chatbot</title>
     </head>
     <body>
-        <h2>Chatbot Test</h2>
+        <h2>ODM College Chatbot</h2>
         <input type="text" id="msg" placeholder="Type message">
         <button onclick="sendMsg()">Send</button>
         <p id="response"></p>
@@ -54,6 +58,10 @@ def home():
             .then(res => res.json())
             .then(data => {
                 document.getElementById("response").innerText = data.response;
+            })
+            .catch(err => {
+                document.getElementById("response").innerText = "Error occurred";
+                console.log(err);
             });
         }
         </script>
@@ -62,25 +70,31 @@ def home():
     """)
 
 
-# ✅ Chat API
-@app.route("/chat", methods=["GET", "POST"])
+# Main API
+@app.route("/chat", methods=["POST"])
 def chat():
+    try:
+        data_req = request.get_json()
 
-    # GET (browser)
-    if request.method == "GET":
-        msg = request.args.get("message", "")
-        if not msg:
-            return jsonify({"response": "Use ?message=hello"})
-        return jsonify({"response": chatbot_response(msg)})
+        if not data_req or "message" not in data_req:
+            return jsonify({"response": "Please send a message."})
 
-    # POST (API)
-    data_req = request.get_json(silent=True)
-    if not data_req or "message" not in data_req:
-        return jsonify({"response": "Please send a message."})
+        user_msg = data_req["message"]
+        bot_reply = chatbot_response(user_msg)
 
-    return jsonify({"response": chatbot_response(data_req["message"])})
+        return jsonify({"response": bot_reply})
+
+    except Exception as e:
+        print("ERROR:", e)
+        return jsonify({"response": "Server error occurred"})
+
+
+# Health check
+@app.route("/health")
+def health():
+    return "OK"
 
 
 if __name__ == "__main__":
     import os
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=True)
