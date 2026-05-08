@@ -4,15 +4,32 @@
       "tag": "greetings",
       "patterns": ["Hi","Hello","Hey","Good morning","Good afternoon","Good evening","hye","hii","hi","hello","hlo","hlw"],
       "responses": ["Hello! Welcome to ODM College Enquiry Chatbot.How can i help you?"]
+    },    
+	{
+      "tag": "odm_transport",
+      "patterns": ["Transport Facility Available in ODM College?","transport facility available in college?","Transport Facility available?"],
+      "responses": ["Yes, Transport Facility is available in ODM College for Women. For More Location Specific Details. Please contact: +91-9991200178, +91-9017010620"]
     },
-
     {
+      "tag": "odm_distance",
+      "patterns": ["distance courses are available in ODM?","Distance courses are available in ODM?","distance courses available?"],
+      "responses": ["For Distance Courses Information, Please contact Our City Office: ODM College: Street No.8, Jawahar Nagar, Hisar - 125001 Ph.01662-238789, 9991200178,9017010620"]
+    },
+	{
+      "tag": "odm_info",
+      "patterns": ["Is there B.Ed or other integrated courses available in ODM?", "B.ed is available in ODM?", "B.ed. available in ODM?", "educational Courses are available in ODM"],
+      "responses": ["No, only regular degree courses are available at campus of ODM College for WOMEN"]
+    },
+	{
       "tag": "about_odm",
-      "patterns": ["tell me about college","tell me about ODM college","about college"
-	  ],
+      "patterns": ["tell me about college","tell me about ODM college","about college"],
       "responses": ["ODM College stands for Ompati Devi Memorial College located in Hisar, Haryana."]
     },
- {
+	 "tag": "about_odm",
+      "patterns": ["tell me about college","tell me about ODM college","about college"],
+      "responses": ["ODM College stands for Ompati Devi Memorial College located in Hisar, Haryana."]
+    },
+    {
       "tag": "college_location",
       "patterns": ["where ODM is located","tell me about location of the ODM college","show location",
  "in which city ODM college located","Is ODM College in Hisar?","Is ODM College in Haryana?","What is the address of ODM College?",
@@ -37,7 +54,7 @@
   ]
     },
 {
-  "tag": "vice_principal_info",
+	 "tag": "vice_principal_info",
   "patterns": [
     "who is the vice principal of odm college",
     "name of vice principal",
@@ -189,7 +206,7 @@
     "BA admission fees?"
   ],
   "responses": [
-    "B.A is a 3-year undergraduate course. The total annual fees at ODM College for Women, Muklan (Hisar) is 18,000Rs. feess can be paid in installments as per college rules."
+    "B.A is a 3-year undergraduate course. Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"
   ]
 },
 
@@ -229,7 +246,7 @@
     "What are the charges for B.Com admission?"
   ],
   "responses": [
-"B.Com is a 3-year undergraduate course. The total annual fees at ODM College for Women, Muklan (Hisar) is ₹22,000."  ]
+"B.Com is a 3-year undergraduate course. Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"  ]
 },
 
     {
@@ -305,7 +322,7 @@
     "Annual fees and duration of B.Sc Non Medical?"
   ],
   "responses": [
-     "B.Sc Physical Science (Non-Medical) is a 3-year undergraduate course. The total annual fees at ODM College for Women, Muklan (Hisar) is ₹25,000."
+     "B.Sc Physical Science (Non-Medical) is a 3-year undergraduate course. Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"
   ]
 },
 {
@@ -346,7 +363,7 @@
     "What are the charges for B.Sc Computer Science admission?"
   ],
   "responses": [
-   "B.Sc Computer Science(Non-Medical) is a 3-year undergraduate course. The total annual fees at ODM College for Women, Muklan (Hisar) is ₹25,000."
+   "B.Sc Computer Science(Non-Medical) is a 3-year undergraduate course. Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"
   ]
 },
 {
@@ -385,7 +402,7 @@
     "What are the charges for B.Sc Medical admission?"
   ],
   "responses": [
-    "B.Sc Medical is a 3-year undergraduate course. The total annual fees at ODM College for Women, Muklan (Hisar) is ₹25,000."
+    "B.Sc Medical is a 3-year undergraduate course. Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"
   ]
 },
 {
@@ -424,7 +441,7 @@
     "What is the complete fees of M.Com course?"
   ],
   "responses": [
-    "The total annual fees for M.Com at ODM College for Women, Muklan (Hisar) is ₹30,000 per year."
+    "Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"
   ]
 },
 {
@@ -445,7 +462,7 @@
     "How many semesters in M.Com at ODM College?"
   ],
   "responses": [
-    "M.Com at ODM College for Women, Muklan (Hisar) is a Postgraduate Degree course of 2 Years duration divided into 4 Semesters. The total annual fees is ₹30,000."
+    "M.Com at ODM College for Women, Muklan (Hisar) is a Postgraduate Degree course of 2 Years duration divided into 4 Semesters. Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"
   ]
 },
 {
@@ -489,7 +506,7 @@
     "Duration and fees of M.Sc Mathematics?"
   ],
   "responses": [
-    "M.Sc Mathematics at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. The total annual fees is ₹40,000 per year."
+    "M.Sc Mathematics at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"
   ]
 },
 {
@@ -537,7 +554,7 @@
     "M.Sc Physics duration and fees?"
   ],
   "responses": [
-    "M.Sc Physics at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. The total annual fees is ₹45,000 per year."
+    "M.Sc Physics at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"
   ]
 },
 {
@@ -583,7 +600,7 @@
     "Course details of M.Sc Chemistry?"
   ],
   "responses": [
-    "M.Sc Chemistry at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. The total annual fees is ₹45,000 per year."
+    "M.Sc Chemistry at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"
   ]
 },
 {
@@ -631,7 +648,7 @@
     "Details of M.Sc Computer Science in ODM College Muklan?"
   ],
   "responses": [
-    "M.Sc Computer Science at ODM College for Women, Muklan (Hisar) is a 2-year Postgraduate Degree course divided into 4 semesters. The total annual fees is ₹40,000 per year."
+    "M.Sc Computer Science at ODM College for Women, Muklan (Hisar) is a 2-year Postgraduate Degree course divided into 4 semesters. Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"
   ]
 },
 {
@@ -679,7 +696,7 @@
     "Details of M.A Political Science in ODM College Muklan?"
   ],
   "responses": [
-    "M.A Political Science at ODM College for Women, Muklan (Hisar) is a 2-year Postgraduate Degree course divided into 4 semesters. The total annual fees is ₹25,000 per year."
+    "M.A Political Science at ODM College for Women, Muklan (Hisar) is a 2-year Postgraduate Degree course divided into 4 semesters. Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"
   ]
 },
 {
@@ -725,7 +742,7 @@
     "Tell me complete details of M.A History in ODM College?"
   ],
   "responses": [
-    "M.A History at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. The total annual fees is ₹25,000 per year."
+    "M.A History at ODM College for Women, Muklan (Hisar) is a 2-year postgraduate course divided into 4 semesters. Please Check the Updated Fee Structure on College Official website page: https://odmcollege.com/feeStructure.php"
   ]
 },
 
@@ -1148,6 +1165,57 @@
     "Is admission based on merit or entrance exam?",
     "Can you guide me on applying to ODM College?",
     "What documents are required for admission?",
+	"What documents are required for admission in ba?",
+	"What documents are required for admission in B.A.?",
+	"What documents are required for admission in ba?",
+	"What documents are required for admission in Bachelor of Arts?",
+	"What documents are required for admission in B.Sc.?",
+	"What documents are required for admission in bsc?",
+	"What documents are required for admission in Bachelor of Science?",
+    "What documents are required for admission in B.Sc.(Physical Science)?",
+	"What documents are required for admission in B.Sc Physical Science?",
+	"What documents are required for admission in BSc Physical Science?",
+	"What documents are required for admission in bsc(physical science)?",
+	"What documents are required for admission in bsc physical science?",
+	"What documents are required for admission in Bachelor of Science Physical Science?",
+	"What documents are required for admission in B.Sc.(Life Science)?",
+	"What documents are required for admission in B.Sc Life Science?",
+	"What documents are required for admission in BSc Life Science?",
+	"What documents are required for admission in bsc(life science)?",
+	"What documents are required for admission in bsc life science?",
+	"What documents are required for admission in Bachelor of Science Life Science?",
+	"What documents are required for admission in B.Com.?",
+	"What documents are required for admission in bcom?",
+	"What documents are required for admission in Bachelor of Commerce?",
+	"What documents are required for admission in M.Com.?",
+	"What documents are required for admission in mcom?",
+	"What documents are required for admission in Master of Commerce?",
+	"What documents are required for admission in M.Sc(Math)?",
+	"What documents are required for admission in M.Sc. Mathematics?",
+	"What documents are required for admission in MSc Math?",
+	"What documents are required for admission in msc(math)?",
+	"What documents are required for admission in msc mathematics?",
+	"What documents are required for admission in M.Sc(Computer Science)?",
+	"What documents are required for admission in M.Sc. Computer Science?",
+	"What documents are required for admission in MSc Computer Science?",
+	"What documents are required for admission in msc(computer science)?",
+	"What documents are required for admission in msc computer science?",
+	"What documents are required for admission in M.A.(Political Science)?",
+	"What documents are required for admission in MA Political Science?",
+	"What documents are required for admission in ma(political science)?",
+	"What documents are required for admission in Master of Arts Political Science?",
+	"What documents are required for admission in M.A.(History)?",
+	"What documents are required for admission in MA History?",
+	"What documents are required for admission in ma(history)?",
+	"What documents are required for admission in Master of Arts History?",
+	"What documents are required for admission in M.Sc.(Physics)?",
+	"What documents are required for admission in MSc Physics?",
+	"What documents are required for admission in msc(physics)?",
+	"What documents are required for admission in Master of Science Physics?",
+	"What documents are required for admission in M.Sc.(Chemistry)?",
+	"What documents are required for admission in MSc Chemistry?",
+	"What documents are required for admission in msc(chemistry)?",
+	"What documents are required for admission in Master of Science Chemistry?",	
     "Is there an online application form for admission?",
     "How do I submit my application?",
     "Are there any feess for admission?",
@@ -1427,7 +1495,9 @@
     "ncc details",
     "ncc information",
     "is ncc compulsory",
-    "ncc training details"
+    "ncc training details",
+	"ncc is available in College",
+	"NCC is available in ODM College for Women?"
   ],
   "responses": [
     "NCC stands for National Cadet Corps.\n\nNCC is available at ODM College for Women, Muklan.\n\nStudents can join NCC to develop discipline, leadership, and patriotism. NCC provides training, camps, and certificates (A, B, and C certificates).\n\nNCC certificates are helpful for government jobs and defense services.\n\nFor joining procedure and eligibility details, please contact the college office."
